@@ -1,26 +1,24 @@
-import React,{useEffect,useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import { database } from '../firebase';;
+import { database } from '../firebase';
 
-function Like({userData,postData}) {
+function Like2({userData,postData}) {
     const [like,setLike] = useState(null);
     useEffect(()=>{
-        let check = postData.likes.includes(userData.userId)?true:false;
+        let check = postData.likes.includes(userData.userId)?true:false
         setLike(check)
-        // console.log(userData)
     },[postData])
     const handleLike = () => {
-        if(like == true){
-            let narr = postData.likes.filter((el)=>el!=userData.userId);
+        if(like==true){
+            let narr = postData.likes.filter((el)=>el!=userData.userId)
             database.posts.doc(postData.postId).update({
                 likes:narr
-            });
-        }
-        else{
+            })
+        }else{
             let narr = [...postData.likes,userData.userId]
             database.posts.doc(postData.postId).update({
                 likes:narr
-            });
+            })
         }
     }
     return (
@@ -29,7 +27,7 @@ function Like({userData,postData}) {
                 like!=null?
                 <>
                 {
-                    like==true?<FavoriteIcon className={`icon-styling like`} onClick={handleLike}/> :<FavoriteIcon className={`icon-styling unlike`} onClick={handleLike}/>
+                    like==true?<FavoriteIcon style={{padding:'1rem',paddingTop:'0.5rem'}} className={`like`} onClick={handleLike}/> :<FavoriteIcon style={{padding:'1rem',paddingTop:'0.5rem'}} className={`unlike2`} onClick={handleLike}/>
                 }
                 </>:
                 <></>
@@ -38,4 +36,4 @@ function Like({userData,postData}) {
     )
 }
 
-export default Like
+export default Like2

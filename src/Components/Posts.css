@@ -42,3 +42,37 @@
     cursor: pointer;
     color: white;
 }
+
+.chat-styling{
+    color: white;
+    position: absolute;
+    bottom: 2%;
+    left: 25%;
+}
+
+.modal-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.video-modal{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-modal video{
+    height: 85vh;
+}
+
+.unlike2{
+    color: black;
+    cursor: pointer;
+}
+
+.card1{
+    height: 70vh;
+}
