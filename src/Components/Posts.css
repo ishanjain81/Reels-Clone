@@ -75,4 +75,18 @@
 
 .card1{
     height: 70vh;
+    overflow: scroll !important;
+}
+
+@media screen and (max-width:400px){
+    .video-modal{
+        display: none;
+    }
+    .comment-modal{
+        height: 50vh;
+    }
+    .card1{
+        height: 63%;
+        overflow: scroll !important;
+    }
 }

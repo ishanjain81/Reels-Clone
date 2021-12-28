@@ -25,7 +25,6 @@
     height: 590px;
     width: 441px;
     position: relative;
-
 }
 
 .car{
@@ -34,4 +33,29 @@
     position: absolute; 
     left: 143px;
     top: 93px;
+}
+
+@media screen and (max-width:400px){
+    .loginWrapper{
+        flex-wrap: wrap;
+    }
+    .imgcar{
+        height: 70vh;
+        width: 50vh;
+        position: static;
+
+    }
+    .loginCard{
+        width: 50vh;
+        margin-bottom: 30%;
+    }
+    .insta-logo img{
+        width: 40vw;
+    }
+    .car{
+        height: 120px;
+        width: 187px;
+        left: 133.5px;
+        top: 125.5px;
+    }
 }

@@ -37,3 +37,19 @@
     height: 20rem;
     padding: 0.5rem;
 }
+
+@media only screen and (max-width:400px){
+    .profile-img img{
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        margin-left: 10%;
+    }
+    .container{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .profile-videos video{
+        height: 10rem;
+    }
+}

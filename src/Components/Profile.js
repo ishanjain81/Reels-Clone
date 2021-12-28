@@ -34,8 +34,8 @@ function Profile() {
     },[id])
 
     useEffect(async()=>{
-        if(userData!=null){
-            let parr = []
+        if(userData!=null && userData.postIds != null){
+            let parr = [];
             for(let i=0;i<userData.postIds.length;i++){
                 let postData = await database.posts.doc(userData.postIds[i]).get()
                 parr.push({...postData.data(),postId:postData.id})
