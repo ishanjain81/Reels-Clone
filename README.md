@@ -17,8 +17,8 @@ Building Instagram Reels Clone with help of Reactjs, Firebase and Material UI. U
 ![Home Page](public/Home.JPG "Home Page")
 ![Sign Up](public/sign_up.JPG "Sign Up")
 ![Sign In](public/sign_in.JPG "Sign In")
-![Comment](Comment.JPG "Comment")
-![Profile](Profile.JPG "Profile")
+![Comment](public/Comment.JPG "Comment")
+![Profile](public/Profile.JPG "Profile")
 
 ## Technologies Stack:
 
